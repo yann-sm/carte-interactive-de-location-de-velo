@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+	<title> Location de vélo à Saint-Malo </title>
+</head>
+
+<body>
+	        <br><br>
+        <hr>
+
+        <div id="menu"> 
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <p><a href="#R" onclick="resa()">Réservation</a></p>
+            <p><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi865WM_ZjlAhVViNUKHRF-CIoYABAAGgJ3cw&ae=1&ohost=www.google.com&cid=CAESQeD23WiVXRCI-Vnb8a4I6laSdewEh4w7x00kOq-Lf2ryUn7BsixSROp4QRzXcRURnVuLU97WtQ32soXAEylz9HIn&sig=AOD64_2kesRdJMaXEJBYWPzswU5fpLpq_A&q=&ved=2ahUKEwjenI6M_ZjlAhWly4UKHaXIBWMQ0Qx6BAgNEAE&adurl=https://www.bretagne35.com/les-sites-remarquables/saint-malo%3Fgclid%3DCjwKCAjwlovtBRBrEiwAG3XJ-9TJ1e6FEDqv8v7q_R7Aac6Rzl9mlaNniX8EBCRRgxRVngPS9D3SSRoCZFUQAvD_BwE">Office du tourisme de Saint-Malo</a></p>
+               
+        </div>
+
+        <span id="open" style="font-size: 25px; cursor:pointer"onclick="openNav()">&#9776;Open</span>
+        </div>
+        <div id="img">
+            <img src=http://www.velos-bleus.fr/wp-content/uploads/2017/06/photo-vtc.jpg width="230px" height="110px">
+            <h3 id="titre">Louée un vélo à Saint-Malo</h3><br>
+        </div>
+
+
+        <div id="contenuMap">
+            
+            <div id="map"></div>
+
+            <div class="div" id="p1" onclick="emplacement()">
+                <p id="num1"><strong>1 - Thermes Marins</strong> de Saint-Malo<br>
+                Nombre de vélo disponible : <span id="tm">7</span></p>
+            </div>
+            <div class="div" id="p2" onclick="emplacement2()" style="margin-top: 10px;">
+                <p><strong>2 - Gare SNCF</strong> <br><br>
+                Nombre de vélo disponible : <span id="gare">7</span></p>
+            </div>
+            <div class="div" id="p3" onclick="emplacement3()" style="margin-top: 10px;">
+                <p><strong>3 - Porte St-Vincent</strong> <br>(porte principale de la cité Corsaire)<br><br>
+                Nombre de vélo disponible : <span id="sv">7</span></p>
+            </div>
+            <div class="div" id="p4" onclick="emplacement4()" style="margin-top: 10px;">
+                <p><strong>4 - Plage des Bas Sablons </strong> <br><br>
+                Nombre de vélo disponible : <span id="pbs">7</span></p>
+            </div>
+            <div class="div" id="p5" onclick="emplacement5()" style="margin-top: 10px;">
+                <p><strong>5 - Plage du Pont </strong> <br><br>
+                Nombrte de vélo disponible : <span id="pp">7</span></p>
+            </div>
+
+            <br>
+        </div>
+        
+        <div id="infoResa">
+         <p> - Vélo réserver : <span id="md"> ... </span> <br> - Lieux de location : <span id="lieu"> ... </span></p>
+        </div>
+
+        <div id="contenuForm"><a id="R">
+            
+                <h3>- Réserver son vélo -</h3>
+
+                Entrez le nombre de vélo à louer :
+                <input type="number" name="nb" id="nb" required="true"><br>
+
+                Lieux de location :
+                <select id="localisation" name="localisation">
+                    <option value="Porte saint-Vincent" id="svElt">Porte St-Vincent</option>
+                    <option value="Thermes Marins" id="tmElt">Thermes marins</option>
+                    <option value="GareSNCF" id="gareElt">Gare SNCF</option>
+                    <option value="plage des Bas Sablons" id="pbsElt">Plage des Bas Sablons </option>
+                    <option value="Plage Du Pont" id="ppElt">Plage du Pont</option>
+                </select>
+
+                <button  onclick="reserver()">Réserver</button>
+
+         </a></div>
+
+        
+
+
+    <script src="app.js"></script>
+	
+	
+</body>
+</html>

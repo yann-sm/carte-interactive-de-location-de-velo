@@ -1,0 +1,162 @@
+
+body {     background-color: #353535;
+}
+
+/* Le menu */
+#menu {
+    margin-left: 2%;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s:
+    padding-top: 60px;
+    opacity: 0.9;
+}
+.sidenav p a{
+
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+.sidenav p a:hover, .offcanvas p a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#img{
+    margin-left: 120px;
+    margin-top: -30px;
+    box-shadow: 1px 1px 1px red;
+}
+
+#titre {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: -100px;
+}
+
+#map {
+    width: 450px; height: 700px;
+    margin-left: 18px;
+    margin-top: 40px;
+    border: 1px solid darkblue;
+}
+
+#contenuMap {
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+.div {
+    width: 200px; height: 100px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 480px;
+    margin-top: -700px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+.div:hover {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid white;
+}
+
+.divBis { background-color: yellow; }
+
+
+#contenuForm {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 50px;
+    visibility: hidden;
+    position: absolute center;
+}
+
+#boutonMarqueur {
+    background-color: lightgray;
+    margin-left: 490px; 
+    margin-top: -20px;
+    border-radius: 5px;  
+    visibility: visible;
+    width: 200px; height: 40px;
+}
+
+#boutonMarqueur:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+#infoResa {
+    width: 100%;
+    margin-top: 20px;
+    padding: 1px 0.1%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    visibility: hidden;
+    position: absolute;
+}
+
+#infoResa p { margin-left: 80px; }
+
+span {
+    color: darkred;
+    margin-right: 20px;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+      
+
+@media only screen and (min-width: 1050px){
+
+    #map {
+        width: 1200px; height: 880px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }
+    #img {
+        width: ; height: ;
+    }
+    .div {
+        margin-left: 1440px;
+        margin-top: -900px;
+    }
+    #boutonMarqueur {
+        margin-left: 1455px;
+    }
+    #contenuForm {
+        margin-top: 180px;
+    }
+    #infoResa p { margin-left: 36%; }
+}
+
+           
